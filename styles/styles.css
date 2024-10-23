@@ -63,3 +63,24 @@ footer {
     font-size: 0.9rem;
     color: #999;
 }
+
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a line */
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: black; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
