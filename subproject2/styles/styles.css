@@ -99,44 +99,37 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Body with Background Image */
+body, html {
+    height: 100%; /* Ensures the body and html elements cover the full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling if the image extends beyond the viewport */
+}
 body {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color for readability */
+    background-image: url('https://images8.alphacoders.com/494/494045.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background in place when scrolling */
+    background-position: center center; /* Centers the image */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    min-height: 100vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
 }
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    color: #ffd700; /* Gold color for a celebratory feel */
-}
-
-header p {
-    color: #e0e0e0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-nav a {
-    color: #ffa500;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #ffd700;
+/* Optional overlay for readability */
+body::before {
+    content: "";
+    position: fixed; /* Set to fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures overlay height matches viewport height */
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency as needed */
+    z-index: -1; /* Places overlay behind content */
 }
 
 /* Main Content Styling */
@@ -147,8 +140,10 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: #1e1e1e; /* Slightly lighter background */
+    background-color: rgba(30, 30, 30, 0.8); /* Slightly transparent background for readability */
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
 }
 
 /* Welcome Message */
@@ -192,7 +187,7 @@ main {
 }
 
 .wish-card {
-    background-color: #333333;
+    background-color: rgba(51, 51, 51, 0.8);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -215,13 +210,13 @@ footer {
 
 /* Video Section Styling */
 .birthday-video {
-    background-color: #1e1e1e; /* Slightly lighter background for contrast */
+    background-color: rgba(30, 30, 30, 0.8); /* Matching main content style */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     text-align: center;
-    color: #ffa500; /* Consistent with other headings */
+    color: #ffa500;
 }
 
 .birthday-video h2 {
@@ -232,13 +227,14 @@ footer {
 /* YouTube Player Styling */
 #player {
     width: 100%;
-    max-width: 560px; /* Constrain width for large screens */
+    max-width: 560px;
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-    margin: 0 auto; /* Center on the page */
+    margin: 0 auto;
 }
+
 
 
 /* Responsive Styling */
