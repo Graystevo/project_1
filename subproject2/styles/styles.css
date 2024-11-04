@@ -242,7 +242,9 @@ footer {
     header h1 {
         font-size: 1.5em;
     }
-
+    body {
+        background-position: right center; /* Show more of the right side on mobile */
+    }
     .welcome-message h2 {
         font-size: 1.8em;
     }
