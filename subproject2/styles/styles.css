@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black; /* White text color for links */
+    
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Make text bold */
 }
