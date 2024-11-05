@@ -107,7 +107,7 @@ body, html {
     overflow-x: hidden; /* Prevents horizontal scrolling if the image extends beyond the viewport */
 }
 body {
-    background-image: url('https://images8.alphacoders.com/494/494045.jpg'); /* Replace with the path to your image */
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240607/pngtree-colorful-rainbow-birthday-party-border-frame-background-generate-ai-image_15742737.jpg'); /* Replace with the path to your image */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps the background in place when scrolling */
@@ -128,7 +128,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%; /* Ensures overlay height matches viewport height */
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency as needed */
+    /* background-color: rgba(0, 0, 0, 0.6); /* Adjust transparency as needed */
     z-index: -1; /* Places overlay behind content */
 }
 
@@ -168,7 +168,7 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
