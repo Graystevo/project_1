@@ -1,72 +1,68 @@
-/* PAGE SPECIFIC CSS */
-
-
-
-
-
-
-
-/* GENERIC STUFF for header and footers */
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    justify-content: space-between;
-    height: 100vh;
-    text-align: center;
+/* Resetting Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* Header Styling */
-header {
-    margin-top: 50px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-/* Footer Styling */
-footer {
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    color: #999;
-}
-
-
-/* test css for header stuff */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Light background color */
+    color: #333;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
 }
 
-nav ul {
+/* HEADERS AND FOOTERS BELOW */
+
+/* HEADER STYLING */
+header {
+    margin-top: 15px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+header nav ul {
+    margin-bottom: 20px;
     list-style-type: none; /* Remove bullet points from list */
     padding: 0; /* Remove padding */
 }
 
-nav ul li {
+header nav ul li {
     display: inline; /* Display list items in a line */
     margin: 0 15px; /* Space between items */
 }
 
-nav ul li a {
+header nav ul li a {
     color: black; /* White text color for links */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Make text bold */
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+/* FOOTER STYLING */
+footer {
+    font-size: 0.9rem;
+    color: #999;
+    text-align: center;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+/* MAIN PAGE CONTENT CHANGED BELOW */
