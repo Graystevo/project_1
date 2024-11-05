@@ -157,6 +157,7 @@ main {
 .welcome-message p {
     text-align: center;
     font-size: 1.2em;
+    color: #d3bef5;
 }
 
 /* Photo Gallery */
@@ -195,10 +196,11 @@ main {
 }
 
 .wish-card p {
-    color: #e0e0e0;
+    color: #d3bef5; /* Soft lavender for a celebratory feel */
     font-size: 1.1em;
     font-style: italic;
 }
+
 
 /* Footer */
 footer {
@@ -243,7 +245,7 @@ footer {
         font-size: 1.5em;
     }
     body {
-        background-position: right center; /* Show more of the right side on mobile */
+        background-position: left center; /* Show more of the left side on mobile */
     }
     .welcome-message h2 {
         font-size: 1.8em;
